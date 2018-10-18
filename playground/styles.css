@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+body{
+    background-color: #008dff;
+}
+
+h1{
+    background-color:#cfab33;
+    width:480px;
+    padding:10px;
+    font-family:Courier;
+    border: solid 5px yellow;
+    
+}
+
+p{
+    
+}
+
+a{
+    
+}
