@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: #5688d3;
+}
+
+h1 {
+    background-color: #34af99;
+    border: solid 5px green;
+    width:500px;
+    text-align: center;
+}
+
+td {
+    background-color: white;
+    width: 600px;
+    padding: 5px 5.25px 5px 6px;
+    margin-right: 50px;
+}
+
+.button{
+    text-decoration:none;
+    background-color: #34aacc;
+    color:white;
+    margin-left:20px;
+    margin-right:5px;
+    padding:10px 30px 10px 30px;
+    
+}
+
+.button:hover{
+    background-color:white;
+    color:blue;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 500px;
+}
