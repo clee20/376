@@ -11,8 +11,12 @@ h1 {
     text-align: center;
 }
 
+p {
+    background-color: green;
+}
+
 td {
-    background-color: white;
+    background-color: #5688d3;
     width: 600px;
     padding: 5px 5.25px 5px 6px;
     margin-right: 50px;
