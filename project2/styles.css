@@ -12,16 +12,43 @@ h1 {
 }
 
 p {
+    margin-top: 20px;
+    text-align: center;
+    width: 500px;
     background-color: yellow;
+    border: dashed 5px #f9fff4;
+}
+
+table{
+    background-color: yellow;
+    border: dashed 5px white;
 }
 
 td {
-    background-color: #5688d3;
+    background-color: white;
     width: 75px;
     padding: 2px 2px 2px 2px;
     margin-right: 5px;
     margin-top: 5px;
     text-align: center;
+}
+
+img{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+caption{
+    background-color: #34af99;
+    border: solid 5px green;
+    margin-top: 10px;
+}
+
+
+#special-caption{
+    margin-top: 10px;
+    background-color: yellow;
+    border: solid 5px white;
 }
 
 .button{
