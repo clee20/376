@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 3</title>
+
+        <style>
+
+        #result {
+            color: purple;
+            font-size: 100px;
+        }
+
+        </style>
+
+        <script>
+        
+        function getValue(id) {
+            return parseFloat(document.getElementById(id).value);
+        }
+        
+        function writeResult(result) {
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function add() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+            writeResult(value1 + value2);
+        }
+
+        function subtract() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+            writeResult(value1 - value2);
+        }
+        
+        function multiply() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+            writeResult(value1 * value2);
+        }
+        
+        function divide() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+           writeResult(value1 / value2);
+        }
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript Lesson 3</h1>
+
+        <p>
+            The focus of this lesson is <b>functions</b>. We will use this calculator example to
+            explore how functions work, use parameters, return values, and call other functions.
+        </p>
+
+        <form>
+            Value 1: <input type="text" id="value1" name="value1" />
+            <br />
+            Value 2: <input type="text" id="value2" name="value2" />
+            <br />
+            <button type="button" onclick="add()">+</button>
+            <button type="button" onclick="subtract()">-</button>
+            <button type="button" onclick="multiply()">*</button>
+            <button type="button" onclick="divide()">/</button>
+        </form>
+
+        Result: <span id="result"></span>
+    </body>
+</html>
