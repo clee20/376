@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+body {
+    background-color: #A7EF79;
+    text-align: center;
+}
+
+h1 {
+    color: #4577FA;
+}
+
+h2 {
+    color: #F7459A;
+    border: dashed 8px yellow;
+    width: 300px;
+    margin-left: 725px;
+}
+
+form {
+    text-align: center;
+    margin-top: 30px;    
+}
+
+input {
+    color: green;
+    margin-left: 5px;
+}
+
+span {
+    margin-left: 10px;
+    color: #3590A2;
+}

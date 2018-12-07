@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equations</title>
+    
+    <script>document.write('<link rel="stylesheet" type="text/css" href=styles.css?v="' + Math.floor(Math.random() * 1000) + '" />');</script>
+    
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <h1>Pick an Equation!</h1>
+    
+    <h2>The Pythagreon Theorm</h2>
+    <form>
+        A: <input type="text" id="a" name="a" />
+        <br />
+        B: <input type="text" id="b" name="b" />
+        <br />
+        <button type="button" onclick="pythagTheorm()">Click me</button>
+        
+        Result: <span id="resultPT"></span>
+    </form>
+    
+    <br />
+    
+    <h2>The Area of a Triangle</h2>
+    <form>
+        Base: <input type="text" id="base" name="base" />
+        <br />
+        Height: <input type="text" id="height" name="height" />
+        <br />
+        <button type="button" onclick="areaOfTri()">Click me</button>
+        
+        Result: <span id="resultT"></span>
+    </form>
+    
+    <br />
+    
+    <h2>The Angle of a Triangle</h2>
+    <form>
+        Angle 1: <input type="text" id="angle1" name="angle1" />
+        <br />
+        Angle 2: <input type="text" id="angle2" name="angle2" />
+        <br />
+        <button type="button" onclick="lastAngleMeasure()">Click me</button>
+        
+        Result: <span id="resultA"></span>
+    </form>
+</body>
+</html>
