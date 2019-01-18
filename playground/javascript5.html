@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 5</title>
+
+        <script>
+
+        function printSquares() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + Math.pow(i, 2) + "</li>";
+            }
+
+            document.getElementById("squares").innerHTML = items;
+        }
+        
+        function printPowers() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + (i*2) + "</li>";
+            }
+
+            document.getElementById("powers").innerHTML = items;
+        }
+        
+        function printRange() {
+            var num = parseInt(document.getElementById("num").value);
+            var items = "";
+            
+            for (var i = 0; i < num; i++) {
+                items += "<li>" + Math.pow(i, 3) + "</li>";
+            }
+            
+            document.getElementById("range").innerHTML = items;
+        }
+
+        </script>
+    </head>
+
+    <body style="margin-left: 100px;">
+
+        <h1>JavaScript Lesson 5</h1>
+
+        <p>
+            The focus of this lesson is <b>for</b> loops. We will use a for loop to print the
+            first 10 square numbers when you click the button.
+        </p>
+
+        <button type="button" onclick="printSquares()">Click for Square Numbers!</button>
+
+        <ol id="squares"></ol>
+
+        <hr />
+
+        <h2>Example 1</h2>
+
+        <p>Write the code to print the first 10 powers of 2 (starting with 0) using a <b>for</b> loop.</p>
+        
+        <button type="button" onclick="printPowers()">Click for Powers of Two!</button>
+
+        <ol id="powers"></ol>
+        
+        <hr />
+
+        <h2>Example 2</h2>
+
+        <p>
+            Write the code to print the first <i>n</i> cubic numbers (starting with 0) where <i>n</i>
+            is based on a value entered by the user.
+        </p>
+        
+        <input type="text" id="num" name="num" size="10" />
+        
+        <button type="button" onclick="printRange()">Click for Powers of Three!</button>
+
+        <ol id="range" start="0"></ol>
+
+    </body>
+</html>

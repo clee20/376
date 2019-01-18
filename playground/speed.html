@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speed Test</title>
+    
+    <script>
+        function checkSpeed() {
+            var speed = parseInt(document.getElementById("speed").value);
+            
+            var result = "";
+            var best = 60
+            if (isNaN(speed)) {
+                result = "Type a number"
+            } else {
+                var scale = document.getElementById("scale").value;
+                if (scale == "city") {
+                    best = best - 25;
+                }
+                if (speed < best) {
+                    result = "Your too slow!";
+                }
+                
+                if (speed == best) {
+                    result = "Your driving alight!";
+                }
+                
+                if (speed > best) {
+                    result = "Your driving too fast!";
+                }
+            }
+            
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</head>
+
+
+<body>
+    <h1> How Fast are you Driving </h1>
+
+    <form>
+        How fast do you drive?
+        <input type="text" id="speed" name="speed" size="10" />
+        mph
+        <select id="scale" name="scale">
+            <option value="city">City</option>
+            <option value="highway">Highway</option>
+        <select>
+        <button type="button" onclick="checkSpeed()">Analyze</button>
+    </form>
+    
+    <h2 id="result"></h2>
+</body>
+</html>

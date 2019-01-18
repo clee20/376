@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Squid Emoji</title>
+</head>
+
+<body>
+    <svg height="500" width="500">
+        <g stroke="#D4224A">
+            <!-- left tenticle -->
+            <use xlink:href="#leftTent" transform="translate(-20, -20) rotate(10 230 225)" style= "stroke:#C42239"/>
+            <polyline id="leftTent" points="230,225 205,250 185,260 165,260 150,255"
+                                    style= "fill:none; stroke-width:50"/>
+        
+        </g>
+        
+        <g fill="#D4224A">
+            <!-- left tenticle -->
+            <use xlink:href="#leftTentcircle" transform="translate(-21, -32.5)" style= "fill:#C42239"/>
+            <circle id=leftTentcircle
+                    cx="150"
+                    cy="255"
+                    r="25"/> 
+        </g>
+        
+        <g stroke="#D4224A">
+            <!-- right tenticle -->
+            <use xlink:href="#rightTent" transform="translate(20, -20) rotate(-10 270 225)" style= "stroke:#C42239"/>
+            <polyline id="rightTent" points="270,225 295,250 315,260 335,260 350,255"
+                                    style= "fill:none; stroke-width:50"/>
+        
+        </g>
+        
+         <g fill="#D4224A">
+            <!-- left tenticle -->
+            <use xlink:href="#rightTentcircle" transform="translate(21, -32.5)" style= "fill:#C42239"/>
+            <circle id=rightTentcircle
+                    cx="350"
+                    cy="255"
+                    r="25"/> 
+        </g>
+        
+        <g id="body">
+            <!-- head -->
+            <ellipse cx="250"
+                     cy="150" 
+                     rx="90" 
+                     ry="100"
+                     stroke= #A50339
+                     stroke-width="5"
+                     fill= #D4224A />
+                     
+            <!-- eye sockets - left -->         
+            <ellipse cx="220"
+                     cy="180" 
+                     rx="17.5" 
+                     ry="25"
+                     stroke="black"
+                     stroke-width="2.5"
+                     fill= #C0415D />
+            <!-- right -->                 
+            <ellipse cx="280"
+                     cy="180" 
+                     rx="17.5" 
+                     ry="25"
+                     stroke="black"
+                     stroke-width="2.5"
+                     fill= #C0415D />
+            <!-- eye - left -->   
+            <ellipse cx="221"
+                     cy="181" 
+                     rx="10" 
+                     ry="15"
+                     stroke="black"
+                     stroke-width="2.5"
+                     fill="black"/>
+                     
+            <!--eye - right-->   
+            <ellipse cx="279"
+                     cy="181" 
+                     rx="10" 
+                     ry="15"
+                     stroke="black"
+                     stroke-width="2.5"
+                     fill="black"/>
+                     
+            <!-- eye glare - left -->
+            <circle cx="221"
+                    cy="172.5"
+                    r="2.5"
+                    fill="white"/>
+                    
+            <!-- eye glare - right -->
+            <circle cx="279"
+                    cy="172.5"
+                    r="2.5"
+                    fill="white"/>
+        </g>
+        
+        <g>
+            <!-- hat -->
+            <polygon points="150,10 250,50 165,125" style="fill:yellow;stroke:purple;stroke-width:5" />
+            
+        </g>
+        
+        <g>
+            <!-- gift -->
+            <rect x="350"
+                  y="200"
+                  width="100"
+                  height="100"
+                  fill="yellow"
+                  stroke="black"
+                  stroke-width="2.5"/>
+                  
+            <polygon id=stripe points="350,225 450,250 450,225 350,200" style="fill:purple;stroke:magenta;stroke-width:2.5" />
+            <use xlink:href="#stripe" transform="translate(0, 50)"/>
+    
+            <rect x="345"
+                  y="190"
+                  width="110"
+                  height="25"
+                  fill="purple"
+                  stroke="black"
+                  stroke-width="2.5"/>
+                 
+        </g>
+        
+        <g>
+            <!-- text -->
+            <path id="string" d="M 90,350 C 140,300 190,400 260,350 S 360,400 460,350" fill="none" stroke="#B7FE24" stroke-width="5"/>
+            <text>
+                <textPath href="#string" fill="red" font-size="50" letter-spacing="2.5" >
+                    Happy Birthday!
+                </textPath>
+            </text>
+        </g>
+        
+        
+    </svg>
+    
+</body>
+
+</html>
