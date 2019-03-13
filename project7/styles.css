@@ -1,0 +1,44 @@
+#animate {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: orange;
+}
+
+#controls {
+    text-align: center;
+    width: 500px;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+#box {
+    fill: green;
+    stroke: black;
+    stroke-width: 5px;
+}
+
+#box2 {
+    fill: green;
+    stroke: black;
+    stroke-width: 5px;
+}
+
+#leftButton {
+    fill: red;
+    stroke: gray;
+    stroke-width: 5px;
+}
+
+#rightButton {
+    fill: blue;
+    stroke: gray;
+    stroke-width: 5px;
+}
+
+#text {
+    fill: red;
+    font-family: Cosmic sans;
+    font-size: 25pt;
+    text-anchor: middle;
+}
