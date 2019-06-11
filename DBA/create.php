@@ -78,7 +78,7 @@
     // Prepare the query string (we use HEREDOC syntax to avoid messing around with double quotes and string concatentation)
     $sql = <<<SQL
     INSERT INTO COMPANY (COM_NAME, COM_ADDRESS_LINE1, COM_ADDRESS_LINE2, COM_CITY, COM_STATE, COM_ZIP_CODE, COM_PHONE_NUMBER)
-      VALUES ('$name', '$addressLine1', '$addressLine2', '$city', '$state', '$zipCode', '$phoneNumber', '$website')
+      VALUES ('$name', '$addressLine1', '$addressLine2', '$city', '$state', '$zipCode', '$phoneNumber')
 SQL;
     
     // Execute the query and display the results

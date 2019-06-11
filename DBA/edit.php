@@ -78,8 +78,6 @@ if ($result->num_rows > 0) {
             <br />
             <div class="label">Phone Number:</div><input type="text" name="phoneNumber" value="<?php echo $row['COM_PHONE_NUMBER']; ?>"/>
             <br />
-            <div class="label">Website:</div><input type="text" name="website" />
-            <br />
             <button type="submit" name="submit">Save</button>
         </form>
         <button onclick="check()">Cancel</button>
